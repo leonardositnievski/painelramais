@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+body {
+    background-color: #b0c4de2c;
+}
+.container {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cartoes {
+    display: flex;
+    gap: 5px;
+    max-width: 940px;
+}
+
+.cartao {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    width: 180px;
+    height: 80px;
+    border-radius: 5px;
+    float: left;
+    position: relative;
+    padding: 5px;
+    margin: 2px;
+    background-color: white;
+}
+
+.main-cartoes {
+    margin-left: -50px;
+}
+
+.ocupado {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+
+.chamando {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    animation: piscar 1s linear infinite;
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+}
+
+.disponivel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #04ea04;
+}
+
+.indisponivel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #363636;
+}
+
+.pausado {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FF8C00;
+}
+
+.icone-posicao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.agente {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.fila {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.fila > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.row-fila {
+    margin-left: 50px;
+}
+
+.fila-reg {
+    background-color: #b0c4de89;
+    border-radius: 5px;
+}
+
+.fila-disponivel {
+    border-radius: 5px;
+    background-color: #04ea04 !important;
+}
+
+.fila-indisponivel {
+    border-radius: 5px;
+    background-color: #a9a9a9 !important;
+}
+
+.fila-pausado {
+    border-radius: 5px;
+    background-color: #FF8C00 !important;
+}
+
+.fila-ocupado {
+    border-radius: 5px;
+    background-color: #ff0000 !important;
+}
+
+
+.fila-chamando {
+    background-color: #ff0000 !important;
+    animation: piscar 1s linear infinite;
+}
+
+em {
+    margin-right: 5px;
+    padding: 1px 4px;
+}
+
+#formfiltro {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+#painel {
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#search {
+    width: 300px;
+}
+
+#submit {
+    height: 40px;
+    margin-top: 15px;
+}
+
+.form-control {
+    padding: 1px 3px;
+    height: 30px !important;
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+}
+
+.btn-primary {
+    width: 10px;
+    height: 10px;
+}
+
+.filtro {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.totalizador {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardTotalizador {
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    font-size: large;
+}
+
+.bolder {
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+}
+
+.borda {
+    border: solid 1px #00000055;
+}
+
+#sair {
+    color: #007bff;
+}
+
+#logout {
+    cursor: pointer;
+}
+

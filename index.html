@@ -1,0 +1,59 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/monitoramento.css">
+    <title>Monitoramento de Ramais</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="painel">
+            <div class="main-cartoes">
+                <h1>Painel de monitoramento de ramal</h1>
+                <div class="filtro">
+                    <form id='formfiltro' type="get">
+                        <div>
+                            <label for="status">Filtre os ramais pelo status</label><br>
+                            <select name="status" id="status" form="status" class="form-control">
+                                <option value="">Selecione</option>
+                                <option value="disponivel">Disponível</option>
+                                <option value="indisponivel">Indisponível</option>
+                                <option value="chamando">Chamando</option>
+                                <option value="ocupado">Ocupado</option>
+                                <option value="pausado">Pausado</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="status">Pesquise os ramais por nome ou agente</label><br>
+                            <input id='search' name='search' placeholder='Busque ramais por nome ou agente' type="text"
+                                class="form-control" />
+                        </div>
+                        <button type="submit" id="submit"
+                            style='margin-top: 30px; margin-left: -30px; height: 5%; width: 10%;'
+                            class="btn btn-sm btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div id="cartoes"></div>
+            </div>
+            <div>
+                <h3>Fila</h3>
+                <div class="fila"></div>
+            </div>
+            <div id="logout">
+                <span id="sair">Sair</span><br>
+                <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+            </div>
+        </div>
+    </div>
+    <div class="totalizador"></div>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/monitoramento.js"></script>
+    <script src="https://kit.fontawesome.com/ca6d82e111.js" crossorigin="anonymous"></script>
+</body>
+</html>
