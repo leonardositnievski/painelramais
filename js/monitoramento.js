@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     $.ajax({
-        url: 'http://localhost/painel-monitoramento-ramais/index.php',
+        url: 'http://localhost/painel-monitoramento-ramais/indexApi.php',
         method: 'get',
         success: function (data) {
             if (data == 'Unauthenticated') {
@@ -14,7 +14,7 @@ $(document).ready(function () {
                 function () {
                     var status = $('#status').val()
                     var search = $('#search').val()
-                    var url = 'http://localhost/painel-monitoramento-ramais/index.php?status=' + status + '&search=' + search
+                    var url = 'http://localhost/painel-monitoramento-ramais/indexApi.php?status=' + status + '&search=' + search
                     $.ajax({
                         url: url,
                         method: 'post',
@@ -96,7 +96,7 @@ $('#formfiltro').submit(function (e) {
 
     var status = $('#status').val()
     var search = $('#search').val()
-    var url = 'http://localhost/painel-monitoramento-ramais/index.php?status=' + status + '&search=' + search
+    var url = 'http://localhost/painel-monitoramento-ramais/indexApi.php?status=' + status + '&search=' + search
     $.ajax({
         type: "GET",
         url: url,
@@ -116,7 +116,7 @@ $('#formfiltro').submit(function (e) {
 })
 
 $('#logout').click(function () {
-    var url = 'http://localhost/painel-monitoramento-ramais/index.php?logout=true'
+    var url = 'http://localhost/painel-monitoramento-ramais/indexApi.php?logout=true'
     $.ajax({
         url: url,
         method: 'get',
