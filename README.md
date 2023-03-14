@@ -19,12 +19,13 @@ Status para Unknown ou Ok
 
 Em filas:
 As filas não apresentam colunas, mas são separadas por frases.
-veja um exemplo:       SIP/7000 with penalty 1 (dynamic) (Not in use) has taken no calls yet Chaves
+veja um exemplo: SIP/7000 with penalty 1 (dynamic) (Not in use) has taken no calls yet Chaves
 
-Cada frase pode ter o seu número SIP/ alterado, este número deve ser o nome de algum ramal. 
-O valor (Not in Use) entre parentêses representa o status da fila e pode ser alterado para: (Ring), (Unavailable), (paused), (paused) (Not in use), (In use)
-O valor "no calls" representa o total de chamadas atendidas e pode ser alterado para um número inteiro
-O valor Chaves no final da frase representa o nome do atendente e pode ser alterado para qualquer outro nome próprio
+Cada frase pode ter o seu número SIP/ alterado, este número deve ser o nome de algum ramal;
+O valor (Not in Use) entre parentêses representa o status da fila e pode ser alterado para: (Ring), (Unavailable), (paused), (paused) (Not in use), (In use);
+O valor "no calls" representa o total de chamadas atendidas e pode ser alterado para um número inteiro;
+
+O valor Chaves no final da frase representa o nome do atendente e pode ser alterado para qualquer outro nome próprio;
 
 
 
