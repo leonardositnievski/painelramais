@@ -10,6 +10,8 @@ Este painel é um cenário fictício, onde há um painel de monitoramento de ram
 6. Para testar localmente o banco de dados deve ser obrigatoriamente o Mysql (devido as querys realizadas em mysqli)
 
 ## Testando Localmente
+Para testar é necessário ter o PHP instalado e ter movido o projeto para o htdocs. 
+Com isso feito, deve se importar o dump.sql presente na pasta dump no banco de dados mysqli, assim sua base dados será criada. Dentro da pasta dump está contido um arquivo README.md com mais instruções para a importação do banco de dados. 
 Para testar a atualização dos paineis e das filas é necessário alterar o arquivo ramais, ou o filas, porém, deve se ter cuidado, ao alterar valores. Abaixo segue quais colunas de lib\filas podem ser alterados e quais colunas de lib\ramais podem ser alterados.
 
 Em ramais:
