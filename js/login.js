@@ -24,7 +24,7 @@
                 "senha": senha
             }
             $.ajax({
-                url: 'http://localhost/painel-monitoramento-ramais/index.php',
+                url: 'http://localhost/painel-monitoramento-ramais/indexApi.php',
                 method: 'post',
                 data: {
                     'cadastro': data
@@ -53,7 +53,7 @@
                 "senha": senha
             }
             $.ajax({
-                url: 'http://localhost/painel-monitoramento-ramais/index.php',
+                url: 'http://localhost/painel-monitoramento-ramais/indexApi.php',
                 method: 'post',
                 data: {
                     'login': data
